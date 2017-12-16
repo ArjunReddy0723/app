@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression" parallel="tests" thread-count="3" verbose="5">
+    <test name="Test one" preserve-order="false">
+        <parameter name="wda" value="8100"/>
+        <parameter name="deviceName" value="iPhone X"/>
+        <parameter name="port" value="4725"/>
+        <classes>
+            <class name="com.test.app.ParallelTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Test two" preserve-order="false">
+        <parameter name="wda" value="8101"/>
+        <parameter name="deviceName" value="iPhone SE"/>
+        <parameter name="port" value="4724"/>
+        <classes>
+            <class name="com.test.app.ParallelTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Test three" preserve-order="false">
+        <parameter name="wda" value="8102"/>
+        <parameter name="deviceName" value="iPhone 8"/>
+        <parameter name="port" value="4723"/>
+        <classes>
+            <class name="com.test.app.ParallelTest">
+            </class>
+        </classes>
+    </test>
+
+</suite>
